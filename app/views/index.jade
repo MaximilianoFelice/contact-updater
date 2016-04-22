@@ -1,0 +1,19 @@
+extend layout
+block content    
+  div(ng-controller='main')
+    .col-md-6
+      .form-group
+        input.form-control(type='text', ng-model='person.name', placeholder='Name')
+      .form-group
+        input.form-control(type='text', ng-model='person.age', placeholder='Age')
+      .form-group
+        button.btn.btn-primary(ng-click='add()') Add
+    .col-md-6
+      .table-responsive
+        table.table
+          tr
+            th Name
+            th Age
+          tr(ng-repeat='p in people')
+            td {{p.name}}
+            td {{p.age}}
