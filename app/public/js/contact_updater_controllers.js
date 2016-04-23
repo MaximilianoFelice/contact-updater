@@ -2,9 +2,9 @@
 
 /* Controllers */
 
-var contactUpdaterControllers = angular.module('contactUpdaterControllers', []);
+var contactUpdaterControllers = angular.module('contactUpdaterControllers', ['rx']);
 
-contactUpdaterControllers.controller('main', function($scope) {
+contactUpdaterControllers.controller('main', function($scope, $rx) {
     $scope.people = [];
     $scope.person = {};
     $scope.add = function() {
