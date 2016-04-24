@@ -12,9 +12,11 @@ html(lang="en", ng-app="contactUpdater")
     div(ng-include='', src="'partials/header.html'")
     .container
         block content
+  
     script(src='libs/jquery/dist/jquery.min.js')
-    script(src='node_modules/rx/dist/rx.lite.min.js')
-    script(src='node_modules/rx-angular/dist/rx.angular.js')
-    script(src='libs/angular/angular.js')
-    script(src='js/app.js')
+    script(src='angular/angular.js')
+    script(src='rx/dist/rx.min.js')
+    script(src='rx/dist/rx.lite.min.js')
+    script(src='js/rx-angular/rx.angular.fixed.js')
     script(src='js/contact_updater_controllers.js')
+    script(src='js/app.js')
