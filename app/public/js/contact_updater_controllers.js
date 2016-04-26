@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-var contactUpdaterControllers = angular.module('contactUpdaterControllers', ['rx']);
+var contactUpdaterControllers = angular.module('contactUpdaterControllers', ['rx', 'GoogleApiService']);
 
 contactUpdaterControllers.controller('main', function($scope) {
     $scope.people = [];
@@ -13,5 +13,6 @@ contactUpdaterControllers.controller('main', function($scope) {
     };
 });
 
-contactUpdaterControllers.controller('login', function($scope) {
-});
+contactUpdaterControllers.controller('login', ['$scope', 'contacts', function($scope, gapiService) {
+  debugger
+}]);
