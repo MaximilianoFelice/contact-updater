@@ -12,3 +12,6 @@ contactUpdaterControllers.controller('main', function($scope) {
         $scope.person = {};
     };
 });
+
+contactUpdaterControllers.controller('login', function($scope) {
+});
